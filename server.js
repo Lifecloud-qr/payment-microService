@@ -5,6 +5,7 @@ const port = 8000;
 app.use(express.json());
 
 app.get("/", async (req, res) => {
+    console.log(req.body);
   res.send("Running Server");
 });
 app.post("/paymentrequest", async (req, res) => {
